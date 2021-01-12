@@ -1,1 +1,95 @@
-
+.header {
+    background-color: $grey;
+    &__inner {
+        padding: 31px 0 42px;
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;      
+    }
+    &__logo-link {
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        font-size: 50px;
+    }
+    &__logo-mark {
+        font-weight: 400;
+        color: $blue;
+    }
+    &__menu {
+    }
+    &__menu-list {
+        display: flex;
+        margin-right: 18px;
+    }
+    &__menu-item {
+        position: relative;
+        &--margin {
+            margin-right: 30px;
+        }
+        &--arrow {
+            margin-right: 14px;
+            &:hover {
+                
+                .header__menu-link {
+                    background-color: $white;
+                    border-top-color: $blue;
+                    color: $blue;
+                    transition: all .5s;
+                }
+                .header__dropdown {                    
+                    height: auto;
+                    overflow: visible;
+                    opacity: 1;
+                    transition: all .5s;
+                }
+            }   
+        }       
+    }
+    &__menu-link {
+        padding: 10px 10px 14px 10px;
+        font-weight: 700;
+        font-size: 13px;
+        text-transform: uppercase;  
+        border-top: 5px solid transparent; 
+        &--arrow {
+            padding-right: 26px;
+            &::after {
+                content: '';
+                display: block;
+                width: 7px;
+                height: 5px;
+                background-image: url('/src/images/down-arrow.png');
+                position: absolute;
+                top: 20px;
+                right: 10px;
+            }
+        }
+        &:hover {            
+            border-top-color: $blue;
+            color: $blue;
+            transition: all .5s;
+        }     
+    }
+    &__dropdown {
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        position: absolute;
+        min-width: 200px;
+        padding: 10px 6px;
+        background-color: $white;  
+        border-bottom: 5px solid $blue;     
+    }
+    &__dropdown-item {
+        &:not(:last-child) {
+            border-bottom: 1px solid $grey;
+        }
+    }
+    &__dropdown-link {
+        padding: 12px 22px 12px 11px;
+        font-size: 13px;    
+        &:hover {
+            color: $blue;
+        } 
+    }
+}
