@@ -1,0 +1,39 @@
+.slider {
+    padding: 20px 0 14px;
+    background-color: $blue-light;
+    &__item {
+        margin-bottom: 12px;
+        padding: 100px 60px 0;
+        min-height: 440px;
+        background-image: url('/src/images/slider-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+    }
+    &__item-title {
+        max-width: 294px;
+        font-family: 'Lato', sans-serif;
+        font-size: 50px;
+        font-weight: 700;
+        color: $white;
+    }
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+}
+
+.slick-dots button {
+    margin: 0 8px;
+    width: 14px;
+    height: 14px;
+    font-size: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: $dots-color;
+}
+
+.slick-dots .slick-active button {
+    background-color: $white;
+}
