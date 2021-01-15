@@ -2,7 +2,7 @@
     padding: 20px 0 14px;
     background-color: $blue-light;
     &__item {
-        margin-bottom: 12px;
+        margin-bottom: 5px;
         padding: 100px 60px 0;
         min-height: 440px;
         background-image: url('/src/images/slider-bg.jpg');
@@ -32,8 +32,10 @@
     border: none;
     border-radius: 50%;
     background-color: $dots-color;
+    opacity: 0.5;
 }
 
 .slick-dots .slick-active button {
     background-color: $white;
+    opacity: 1;
 }

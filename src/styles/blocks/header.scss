@@ -77,7 +77,8 @@
         min-width: 200px;
         padding: 10px 6px;
         background-color: $white;  
-        border-bottom: 5px solid $blue;     
+        border-bottom: 5px solid $blue;    
+        z-index: 1; 
     }
     &__dropdown-item {
         &:not(:last-child) {
