@@ -1,0 +1,59 @@
+.categories {
+    padding: 60px 50px;
+    background-color: $grey;
+    box-shadow: 0px -2px 5px 0 rgba(0, 0, 0, 0.07);
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 220px;
+    }    
+    &__item-title {
+        position: relative;
+        padding-top: 10px;
+        padding-left: 60px;
+        margin-bottom: 36px;
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $black;
+    }
+    &__item-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $blue;
+    }
+    &__item-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__item-text {
+        margin-bottom: 30px;
+        font-size: 13px;
+        line-height: 1.54;
+    }
+    &__item-link {
+        position: relative;
+        padding-left: 14px;
+        font-size: 13px;
+        color: $blue;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 0;
+            background-image: url('/src/images/down-arrow.png');
+            width: 7px;
+            height: 5px;
+            transform: rotate(-90deg);            
+        }
+    }
+}
