@@ -1,0 +1,47 @@
+.works {
+    &__title {
+        position: relative;
+        padding: 29px 0 18px 39px;        
+        &::before {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            content: '';
+            width: 14px;
+            height: 24px;
+            display: block;
+            background: url('/src/images/icons/cursor.svg');            
+        }
+    }
+    &__inner {       
+        padding: 20px 0 40px;
+        border-top: 1px solid $grey;
+        border-bottom: 1px solid $grey;        
+    }
+    &__item {
+        text-align: center;        
+    }
+    &__item-box {   
+        display: inline-block;
+        position: relative;
+        &:hover .works__item-frame {
+            height: 80px;
+        }
+    }
+    &__item-frame {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        height: 0;
+        overflow: hidden;
+        background-color: $blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s;
+    }
+    &__item-link {
+        margin: 0 15px;
+    }
+}

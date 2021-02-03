@@ -18,24 +18,3 @@
         color: $white;
     }
 }
-
-.slick-dots {
-    display: flex;
-    justify-content: center;
-}
-
-.slick-dots button {
-    margin: 0 8px;
-    width: 14px;
-    height: 14px;
-    font-size: 0;
-    border: none;
-    border-radius: 50%;
-    background-color: $dots-color;
-    opacity: 0.5;
-}
-
-.slick-dots .slick-active button {
-    background-color: $white;
-    opacity: 1;
-}
