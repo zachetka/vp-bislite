@@ -1,15 +1,14 @@
 .works {
-    &__title {
-        position: relative;
+    &__title {        
         padding: 29px 0 18px 39px;        
         &::before {
+            content: '';
             position: absolute;
             top: 20px;
             left: 0;
-            content: '';
+            display: block;
             width: 14px;
             height: 24px;
-            display: block;
             background: url('/src/images/icons/cursor.svg');            
         }
     }
