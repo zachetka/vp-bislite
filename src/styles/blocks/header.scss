@@ -3,21 +3,11 @@
     box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.07);
     border: solid 1px rgba(0, 0, 0, 0.15);
     &__inner {
-        //padding: 31px 0 42px;
         min-height: 120px;
         display: flex;
         justify-content: space-between;  
         align-items: center;      
-    }
-    &__logo-link {
-        font-family: 'Lato', sans-serif;
-        font-weight: 900;
-        font-size: 50px;
-    }
-    &__logo-mark {
-        font-weight: 400;
-        color: $blue;
-    }
+    }    
     &__menu-list {
         display: flex;
         margin-right: 18px;
